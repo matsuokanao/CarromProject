@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/Striker.cs" />
+    <Compile Include="Assets/CoinController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

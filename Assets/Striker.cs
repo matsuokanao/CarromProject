@@ -6,8 +6,7 @@ public class Striker : MonoBehaviour
 {
     Rigidbody rigidbody;
     public int strikerSpeed = 500;
-
-
+   
     void Awake()
     {
         rigidbody = GetComponent<Rigidbody>();
@@ -15,13 +14,16 @@ public class Striker : MonoBehaviour
     }
 
     private void Update()
+
     {
         if (Input.GetMouseButtonDown(0))
 
         {
-
+            //カメラの位置を取得
             Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Vector3 shotForward = Vector3.Scale((mouseWorldPos - transform.position), new Vector3(1, 0, 1)).normalized;
+            //向きの生成（上方向の除去）
+            Vector3 shotForward = Vector3.Scale((mouseWorldPos - transform.position), new Vector3(1, 0, 1));
+            //力を加える normalized
             rigidbody.AddForce(shotForward * strikerSpeed);
 
         }
