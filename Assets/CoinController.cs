@@ -10,8 +10,11 @@ public class CoinController : MonoBehaviour
         //tagがgoalの場合、gameObjを削除する
         if(collider.gameObject.tag == "goal")
         {
+            //Score クラスの score 変数に +1 点する
+            Score.score++;
             //削除
             Destroy(gameObject);
+            
         }
     }
 }
