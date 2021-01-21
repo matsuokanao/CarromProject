@@ -22,10 +22,12 @@ public class Striker : MonoBehaviour
             //カメラの位置を取得
             Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             //向きの生成（上方向の除去）
-            Vector3 shotForward = Vector3.Scale((mouseWorldPos - transform.position), new Vector3(1, 0, 1));
-            //力を加える normalized
+            Vector3 shotForward = mouseWorldPos - transform.position;
+            shotForward = Vector3.Scale(shotForward, new Vector3(1, 0, 1));
+            shotForward = shotForward.normalized;
+            //力を加える 
             rigidbody.AddForce(shotForward * strikerSpeed);
-
+            Debug.Log(shotForward);
         }
     }
 }
