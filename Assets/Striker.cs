@@ -5,7 +5,7 @@ using UnityEngine;
 public class Striker : MonoBehaviour
 {
     Rigidbody rigidbody;
-    public int strikerSpeed = 1900;
+    public int strikerSpeed = 50;
    
     void Awake()
     {

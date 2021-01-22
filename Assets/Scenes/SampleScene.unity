@@ -1852,7 +1852,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a70c0fd0de5744e369e508f809a7bd54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  strikerSpeed: 500
+  strikerSpeed: 2000
 --- !u!1 &1167540863 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8314734665786737258, guid: 1c27b23af75fa406685ebe6d567ca722, type: 3}
