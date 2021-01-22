@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class BrownCoinController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void OnTriggerEnter(Collider collider)
     {
-        
-    }
+        //tagがgoalの場合、gameObjを削除する
+        if (collider.gameObject.tag == "goal" && this.gameObject.CompareTag("brown"))
+        {
+            //Score クラスの score 変数に +1 点する
+            Score.score++;
+            //削除
+            Destroy(gameObject);
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        }
     }
 }
