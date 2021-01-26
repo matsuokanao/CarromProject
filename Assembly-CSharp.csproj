@@ -59,7 +59,6 @@
     <Compile Include="Assets/Striker.cs" />
     <Compile Include="Assets/CoinController.cs" />
     <Compile Include="Assets/Score.cs" />
-    <Compile Include="Assets/BrownCoinController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

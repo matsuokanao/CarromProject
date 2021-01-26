@@ -9,7 +9,8 @@ public class CoinController : MonoBehaviour
     private void OnTriggerEnter(Collider collider)
     {
         //tagがgoalの場合、gameObjを削除する
-        if(collider.gameObject.tag == "goal" && this.gameObject.CompareTag("white"))
+        //TODO かつStrikerのターンだった場合
+        if (collider.gameObject.tag == "goal" && this.gameObject.CompareTag("white"))
         {
             //Score クラスの score 変数に +1 点する
             Score.score++;
