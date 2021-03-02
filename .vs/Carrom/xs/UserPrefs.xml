@@ -1,14 +1,20 @@
-﻿<Properties StartupConfiguration="{E4804FC0-1848-BB01-4FB4-F98CD7808D27}|">
+﻿<Properties>
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/CoinController.cs">
     <Files>
-      <File FileName="Assets/Striker.cs" Line="30" Column="36" />
-      <File FileName="Assets/CoinController.cs" Line="13" Column="86" />
-      <File FileName="Assets/Score.cs" Line="21" Column="54" />
+      <File FileName="Assets/Striker.cs" Line="18" Column="6" />
+      <File FileName="Assets/CoinController.cs" Line="24" Column="39" />
+      <File FileName="Assets/Score.cs" Line="27" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Carrom" expanded="True" selected="True" />
+          <Node name="Carrom" expanded="True">
+            <Node name="Assembly-CSharp" expanded="True">
+              <Node name="Assets" expanded="True">
+                <Node name="CoinController.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>

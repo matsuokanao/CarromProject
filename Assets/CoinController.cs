@@ -9,8 +9,8 @@ public class CoinController : MonoBehaviour
     private void OnTriggerEnter(Collider collider)
     {
         //tagがgoalの場合、gameObjを削除する
-        //TODO かつStrikerのターンだった場合
-        if (collider.gameObject.tag == "goal" && this.gameObject.CompareTag("white"))
+       
+        if (collider.gameObject.tag == "goal")
         {
             //Score クラスの score 変数に +1 点する
             Score.score++;
@@ -20,3 +20,5 @@ public class CoinController : MonoBehaviour
         }
     }
 }
+//Blenderでカロム版を作成
+//まずは対戦相手と点数で行うべき　gitpushの仕方間違えないようにする
