@@ -2,8 +2,8 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/CoinController.cs">
     <Files>
       <File FileName="Assets/Striker.cs" Line="18" Column="6" />
-      <File FileName="Assets/CoinController.cs" Line="24" Column="39" />
-      <File FileName="Assets/Score.cs" Line="27" Column="1" />
+      <File FileName="Assets/CoinController.cs" Line="23" Column="1" />
+      <File FileName="Assets/Score.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

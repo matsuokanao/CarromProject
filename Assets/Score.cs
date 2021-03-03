@@ -8,19 +8,34 @@ public class Score : MonoBehaviour
 
     public static int score;
     private Text scoreText;
-   //bool IsPlayerTurn;
+    public static bool playerTurn;
+    private bool turn;
 
     void Start()
     {
        // 自分自身に付いているTextポーネントを参照
         scoreText = GetComponent<Text>();
-       // IsPlayerTurn = true;
+        playerTurn = true;
 
     }
 
     void Update()
     {
-       // スコアの表更新
-        scoreText.text = "Score:" + score.ToString();
+        if (playerTurn == true)
+        {
+            // スコアの表更新
+            scoreText.text = "Score:" + score.ToString();
+            //削除
+            Destroy(gameObject);
+
+        }
+
+        if(playerTurn == false)
+        {
+            // スコアの表更新
+            scoreText.text = "Score:" + score.ToString();
+            //削除
+            Destroy(gameObject);
+        }
     }
 }
