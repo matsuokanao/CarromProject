@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class CoinController : MonoBehaviour
 {
-    
-
     private void OnTriggerEnter(Collider collider)
     {
         //tagがgoalの場合、gameObjを削除する
@@ -20,5 +18,3 @@ public class CoinController : MonoBehaviour
         }
     }
 }
-//Blenderでカロム版を作成
-//まずは対戦相手と点数で行うべき　gitpushの仕方間違えないようにする

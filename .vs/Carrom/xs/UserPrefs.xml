@@ -1,9 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/CoinController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Striker.cs">
     <Files>
-      <File FileName="Assets/Striker.cs" Line="18" Column="6" />
-      <File FileName="Assets/CoinController.cs" Line="23" Column="1" />
-      <File FileName="Assets/Score.cs" />
+      <File FileName="Assets/Striker.cs" Line="39" Column="31" />
+      <File FileName="Assets/CoinController.cs" Line="18" Column="33" />
+      <File FileName="Assets/Score.cs" Line="14" Column="17" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,7 +11,7 @@
           <Node name="Carrom" expanded="True">
             <Node name="Assembly-CSharp" expanded="True">
               <Node name="Assets" expanded="True">
-                <Node name="CoinController.cs" selected="True" />
+                <Node name="Striker.cs" selected="True" />
               </Node>
             </Node>
           </Node>
