@@ -6,6 +6,11 @@ public class Striker : MonoBehaviour
 {
     Rigidbody rigidbody;
     public int strikerSpeed = 50;
+    public bool playerTurn;
+
+    void Start () {
+        playerTurn = true;
+    }
 
     void Awake()
     {
@@ -29,7 +34,7 @@ public class Striker : MonoBehaviour
                 //力を加える
                 rigidbody.AddForce(shotForward * strikerSpeed);
                 Debug.Log(shotForward);
-            
+                playerTurn = false;
         }
     }
 }

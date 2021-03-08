@@ -778,6 +778,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   strikerSpeed: 2000
+--- !u!114 &385113290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 385113288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bafec5a65ff214ba6abd52852201ce1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clearUi: {fileID: 385113288}
 --- !u!1001 &394067287
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3233,6 +3246,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2849691173787630642, guid: f735214c7c76243dc968e0feb12ded0d, type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
     - target: {fileID: 2849691173787630643, guid: f735214c7c76243dc968e0feb12ded0d, type: 3}
       propertyPath: m_RootOrder
       value: 23
