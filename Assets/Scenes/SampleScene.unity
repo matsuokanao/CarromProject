@@ -242,6 +242,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &56652536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56652534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5ade588f7e5f4360a172c76ae602444, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &71964439 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8314734665786737258, guid: 1c27b23af75fa406685ebe6d567ca722, type: 3}
@@ -766,7 +778,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   strikerSpeed: 2000
-  Turn: 0
 --- !u!1001 &394067287
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -853,6 +864,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &399911311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 399911309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5ade588f7e5f4360a172c76ae602444, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &403489719
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1594,6 +1617,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &822536283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822536281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5ade588f7e5f4360a172c76ae602444, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &911920369
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2107,7 +2142,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   strikerSpeed: 2000
-  Turn: 1
 --- !u!1 &1484161469 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8314734665786737258, guid: 1c27b23af75fa406685ebe6d567ca722, type: 3}
@@ -2312,7 +2346,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &1610847220
+--- !u!114 &1610847219
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2321,7 +2355,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1610847217}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d1e86a0f38f345e3aeb136e247c354d, type: 3}
+  m_Script: {fileID: 11500000, guid: b5ade588f7e5f4360a172c76ae602444, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1662124702 stripped
@@ -2345,7 +2379,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &1662124705
+--- !u!114 &1662124704
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2354,7 +2388,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1662124702}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d1e86a0f38f345e3aeb136e247c354d, type: 3}
+  m_Script: {fileID: 11500000, guid: b5ade588f7e5f4360a172c76ae602444, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1683823712
@@ -2447,6 +2481,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &1697145164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697145162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5ade588f7e5f4360a172c76ae602444, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1774004239 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8314734665786737258, guid: 1c27b23af75fa406685ebe6d567ca722, type: 3}
@@ -2570,7 +2616,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &1839954697
+--- !u!114 &1839954696
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2579,7 +2625,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1839954694}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d1e86a0f38f345e3aeb136e247c354d, type: 3}
+  m_Script: {fileID: 11500000, guid: b5ade588f7e5f4360a172c76ae602444, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1847863805
@@ -2714,6 +2760,7 @@ GameObject:
   - component: {fileID: 1992244674}
   - component: {fileID: 1992244676}
   - component: {fileID: 1992244675}
+  - component: {fileID: 1992244677}
   m_Layer: 5
   m_Name: GreenScore
   m_TagString: Untagged
@@ -2737,7 +2784,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -555, y: -302}
+  m_AnchoredPosition: {x: 250, y: -302}
   m_SizeDelta: {x: 1000, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1992244675
@@ -2782,6 +2829,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1992244673}
   m_CullTransparentMesh: 0
+--- !u!114 &1992244677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992244673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44ae2d71730b244ad8556520437abd4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2020940889
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3155,7 +3214,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &2126820571
+--- !u!114 &2126820570
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3164,7 +3223,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2126820568}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d1e86a0f38f345e3aeb136e247c354d, type: 3}
+  m_Script: {fileID: 11500000, guid: b5ade588f7e5f4360a172c76ae602444, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &2849691174775020109

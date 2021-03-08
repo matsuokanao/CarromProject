@@ -19,7 +19,5 @@ public class GreenScore : MonoBehaviour
     {
         // スコアの表更新
         GreenscoreText.text = "Score:" + Greenscore.ToString();
-        //削除
-        Destroy(gameObject);
     }
 }

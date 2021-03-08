@@ -59,6 +59,7 @@
      <Compile Include="Assets\Striker.cs" />
      <Compile Include="Assets\Score.cs" />
      <Compile Include="Assets\GreenScore.cs" />
+     <Compile Include="Assets\GreenCoinController.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Users/nao_matsuoka/Unity/Carrom/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
