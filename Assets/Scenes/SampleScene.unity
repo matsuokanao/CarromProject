@@ -778,6 +778,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   strikerSpeed: 2000
+  playerTurn: 0
+  clearUi: {fileID: 385113288}
 --- !u!114 &385113290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -785,7 +787,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 385113288}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bafec5a65ff214ba6abd52852201ce1a, type: 3}
   m_Name: 
@@ -1601,7 +1603,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2849691173787630647, guid: f735214c7c76243dc968e0feb12ded0d, type: 3}
       propertyPath: m_Name
-      value: brownstriker
+      value: greenstriker
       objectReference: {fileID: 0}
     - target: {fileID: 2849691173787630647, guid: f735214c7c76243dc968e0feb12ded0d, type: 3}
       propertyPath: m_TagString
@@ -2151,10 +2153,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1464604197}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a70c0fd0de5744e369e508f809a7bd54, type: 3}
+  m_Script: {fileID: 11500000, guid: 8927e8e366625453e8d1e4fde01ae778, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  strikerSpeed: 2000
+  strikerSpeed: 50
+  playerTurn: 0
+  clearUi: {fileID: 1464604197}
 --- !u!1 &1484161469 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8314734665786737258, guid: 1c27b23af75fa406685ebe6d567ca722, type: 3}
@@ -3301,6 +3305,10 @@ PrefabInstance:
     - target: {fileID: 2849691173787630647, guid: f735214c7c76243dc968e0feb12ded0d, type: 3}
       propertyPath: m_Name
       value: striker
+      objectReference: {fileID: 0}
+    - target: {fileID: 2849691173787630647, guid: f735214c7c76243dc968e0feb12ded0d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2849691173787630647, guid: f735214c7c76243dc968e0feb12ded0d, type: 3}
       propertyPath: m_TagString

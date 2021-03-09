@@ -6,22 +6,28 @@ public class Striker : MonoBehaviour
 {
     Rigidbody rigidbody;
     public int strikerSpeed = 50;
-    public bool playerTurn;
+    public GameObject clearUi;
+    public static bool playerTurn;
+    private Vector3 mStartPos;
 
     void Start () {
         playerTurn = true;
+        clearUi.SetActive(true);
+        // 開始時の座標を記録
+        mStartPos = gameObject.transform.position;
     }
 
     void Awake()
     {
         rigidbody = GetComponent<Rigidbody>();
-  
     }
 
-    private void Update()
+    private void Update(){
 
     {
        //マウスボタンを押したらÏ
+       if(Striker.playerTurn == true){
+
        if (Input.GetMouseButtonDown(0))
 
           {
@@ -34,7 +40,15 @@ public class Striker : MonoBehaviour
                 //力を加える
                 rigidbody.AddForce(shotForward * strikerSpeed);
                 Debug.Log(shotForward);
-                playerTurn = false;
+                //Striker.playerTurn = false;
+                //clearUi.SetActive(false);
+
+                     //if(rigidbody.velocity.magnitude < 0.2f){
+                   // clearUi.SetActive(false);
+                  //gameObject.transform.position = mStartPos;
+                //}
+              }
+          }
         }
     }
 }
