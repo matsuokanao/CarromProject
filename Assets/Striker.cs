@@ -8,13 +8,11 @@ public class Striker : MonoBehaviour
     public int strikerSpeed = 50;
     public GameObject clearUi;
     public static bool playerTurn;
-    private Vector3 mStartPos;
+    
 
     void Start () {
         playerTurn = true;
         clearUi.SetActive(true);
-        // 開始時の座標を記録
-        mStartPos = gameObject.transform.position;
     }
 
     void Awake()
@@ -24,10 +22,8 @@ public class Striker : MonoBehaviour
 
     private void Update(){
 
-    {
+    
        //マウスボタンを押したらÏ
-       if(Striker.playerTurn == true){
-
        if (Input.GetMouseButtonDown(0))
 
           {
@@ -42,13 +38,17 @@ public class Striker : MonoBehaviour
                 Debug.Log(shotForward);
                 //Striker.playerTurn = false;
                 //clearUi.SetActive(false);
-
-                     //if(rigidbody.velocity.magnitude < 0.2f){
-                   // clearUi.SetActive(false);
-                  //gameObject.transform.position = mStartPos;
-                //}
-              }
+                Invoke("Speed", 1);
           }
+    }
+
+
+    void Speed(){
+        if(rigidbody.velocity.magnitude < 0.2f)
+        {
+            clearUi.SetActive(false);
+            float speed = rigidbody.velocity.magnitude;
+                                Debug.Log(speed);  
         }
     }
 }
