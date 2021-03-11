@@ -5,9 +5,10 @@ using UnityEngine.UI;
 
 public class GreenScore : MonoBehaviour
 {
-    public static int Greenscore;
+   public static int Greenscore;
     private Text GreenscoreText;
 
+    // Start is called before the first frame update
     void Start()
     {
         // 自分自身に付いているTextポーネントを参照

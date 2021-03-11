@@ -14,6 +14,8 @@ public class GreenCoinController : MonoBehaviour
             GreenScore.Greenscore++;
             //削除
             Destroy(gameObject);
-        } 
+            
+        }
     }
 }
+
