@@ -5,13 +5,13 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public GameObject Sphere;
-    Rigidbody rigidbody;
-    private Vector3 startPosition;
+    public static bool playerTurn;
    
     // Start is called before the first frame update
     void Start()
     {
-        rigidbody = GetComponent<Rigidbody>();
+        Sphere.SetActive (true);
+        playerTurn = true;
     }
 
     // Update is called once per frame
@@ -19,25 +19,31 @@ public class GameManager : MonoBehaviour
     {
      if (Input.GetMouseButtonDown (0)) {
 
-         Invoke("Speed", 1);
+     if (playerTurn == true) {
+         
+         
+         Invoke("Speed", 2);
  
 		}
  
-		if (Input.GetKey (KeyCode.Space)) {
+		if (playerTurn == false) {
 
-            Invoke("Speed2", 1);
-		}   
-    }
+            Invoke("Speed2", 2);
+        }
+	}   
+ }
 
     void Speed(){
-        transform.position = startPosition;
+
         Sphere.SetActive (false);
+        //playerTurn = false;
 
     }
 
     void Speed2(){
-        transform.position = startPosition;
+
         Sphere.SetActive (true);
+        //playerTurn = true;
  
     }
 }

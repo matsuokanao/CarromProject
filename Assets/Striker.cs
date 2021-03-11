@@ -6,15 +6,11 @@ public class Striker : MonoBehaviour
 {
     Rigidbody rigidbody;
     public int strikerSpeed = 50;
-    public GameObject clearUi;
-    public static bool playerTurn;
-  
+    private Vector3 startPosition;
     
-
-    void Start () {
-
-        playerTurn = true;
-        
+    void Start () 
+    {
+        startPosition = transform.position;
     }
 
     void Awake()
@@ -26,8 +22,8 @@ public class Striker : MonoBehaviour
 
        //マウスボタンを押したらÏ
        if (Input.GetMouseButtonDown(0))
-
           {
+         if(GameManager.playerTurn == true){
                 //カメラの位置を取得
                 Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 //向きの生成（上方向の除去）
@@ -37,22 +33,31 @@ public class Striker : MonoBehaviour
                 //力を加える
                 rigidbody.AddForce(shotForward * strikerSpeed);
                 Debug.Log(shotForward);
-                Invoke("Speed", 1);
+                GameManager.playerTurn = false;
+                GreenGameManager.GreenplayerTurn = true;
+                Invoke("StartPosition", 3);
+
+         } else if (GreenGameManager.GreenplayerTurn == true){
+
+              //カメラの位置を取得
+                Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                //向きの生成（上方向の除去）
+                Vector3 shotForward = mouseWorldPos - transform.position;
+                shotForward = Vector3.Scale(shotForward, new Vector3(1, 0, 1));
+                shotForward = shotForward.normalized;
+                //力を加える
+                rigidbody.AddForce(shotForward * strikerSpeed);
+                Debug.Log(shotForward);
+                GameManager.playerTurn = true;
+                GreenGameManager.GreenplayerTurn = false;
+                Invoke("StartPosition", 3);
+
+         }
       }
     } 
     
-    void Speed(){
-
-        if(playerTurn == true){
-
-        if(rigidbody.velocity.magnitude < 0.2f)
-        {
-            //transform.position = startPosition;
-            playerTurn = false;
-            clearUi.SetActive(false);
-            //float speed = rigidbody.velocity.magnitude;
-            //Debug.Log(speed); 
-            }        
-        } 
+    void StartPosition()
+    {
+        transform.position = startPosition;
     }
 }

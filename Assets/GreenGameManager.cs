@@ -4,40 +4,44 @@ using UnityEngine;
 
 public class GreenGameManager : MonoBehaviour
 {
-
     public GameObject Sphere;
-    Rigidbody rigidbody;
-    private Vector3 startPosition;
+    public static bool GreenplayerTurn;
 
     // Start is called before the first frame update
     void Start()
     {
-        rigidbody = GetComponent<Rigidbody>();
+        Sphere.SetActive (false);
+        GreenplayerTurn = false;
+
     }
 
     // Update is called once per frame
     void Update()
-    {
-    if (Input.GetMouseButtonDown (0)) {
+   {
+     if (Input.GetMouseButtonDown (0)) {
 
-         Invoke("Speed", 1);
+     if (GreenplayerTurn == false) {
+         
+         Invoke("Speed", 2);
  
 		}
  
-		if (Input.GetKey (KeyCode.Space)) {
+		if (GreenplayerTurn == true) {
 
-            Invoke("Speed2", 1);
-		}   
-    }
-
+            Invoke("Speed2", 2);
+        }
+	}   
+ }
     void Speed(){
-        transform.position = startPosition;
+
         Sphere.SetActive (true);
+        //GreenplayerTurn = true;
     }
 
     void Speed2(){
-        transform.position = startPosition;
+
         Sphere.SetActive (false);
+        //GreenplayerTurn = false;
  
     }
 }
