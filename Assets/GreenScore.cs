@@ -6,16 +6,14 @@ using UnityEngine.UI;
 public class GreenScore : MonoBehaviour
 {
    public static int Greenscore;
-    private Text GreenscoreText;
+   private Text GreenscoreText;
 
-    // Start is called before the first frame update
     void Start()
     {
         // 自分自身に付いているTextポーネントを参照
         GreenscoreText = GetComponent<Text>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         // スコアの表更新

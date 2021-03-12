@@ -21,14 +21,13 @@ public class GameManager : MonoBehaviour
 
      if (playerTurn == true) {
          
-         
-         Invoke("Speed", 2);
+         Invoke("Speed", 3);
  
 		}
- 
-		if (playerTurn == false) {
+        
+    if (playerTurn == false) {
 
-            Invoke("Speed2", 2);
+            Invoke("Speed2", 3);
         }
 	}   
  }
@@ -36,14 +35,14 @@ public class GameManager : MonoBehaviour
     void Speed(){
 
         Sphere.SetActive (false);
-        //playerTurn = false;
-
+        playerTurn = false;
+ 
     }
 
     void Speed2(){
 
         Sphere.SetActive (true);
-        //playerTurn = true;
+        playerTurn = true;
  
     }
 }

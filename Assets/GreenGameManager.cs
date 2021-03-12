@@ -22,26 +22,26 @@ public class GreenGameManager : MonoBehaviour
 
      if (GreenplayerTurn == false) {
          
-         Invoke("Speed", 2);
+         Invoke("Speed", 3);
  
 		}
- 
-		if (GreenplayerTurn == true) {
 
-            Invoke("Speed2", 2);
+        if (GreenplayerTurn == true) {
+
+            Invoke("Speed2", 3);
         }
 	}   
  }
     void Speed(){
 
         Sphere.SetActive (true);
-        //GreenplayerTurn = true;
+        GreenplayerTurn = true;
     }
 
     void Speed2(){
 
         Sphere.SetActive (false);
-        //GreenplayerTurn = false;
- 
+        GreenplayerTurn = false;
+
     }
 }

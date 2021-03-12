@@ -57,10 +57,10 @@
   <ItemGroup>
      <Compile Include="Assets\CoinController.cs" />
      <Compile Include="Assets\Striker.cs" />
-     <Compile Include="Assets\Score.cs" />
      <Compile Include="Assets\GreenScore.cs" />
-     <Compile Include="Assets\GreenCoinController.cs" />
+     <Compile Include="Assets\Score.cs" />
      <Compile Include="Assets\GameManager.cs" />
+     <Compile Include="Assets\GreenCoinController.cs" />
      <Compile Include="Assets\GreenGameManager.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Users/nao_matsuoka/Unity/Carrom/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

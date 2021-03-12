@@ -7,7 +7,7 @@ public class Striker : MonoBehaviour
     Rigidbody rigidbody;
     public int strikerSpeed = 50;
     private Vector3 startPosition;
-    
+
     void Start () 
     {
         startPosition = transform.position;
@@ -33,11 +33,10 @@ public class Striker : MonoBehaviour
                 //力を加える
                 rigidbody.AddForce(shotForward * strikerSpeed);
                 Debug.Log(shotForward);
-                GameManager.playerTurn = false;
-                GreenGameManager.GreenplayerTurn = true;
                 Invoke("StartPosition", 3);
-
-         } else if (GreenGameManager.GreenplayerTurn == true){
+         } if (GreenGameManager.GreenplayerTurn == true)
+         
+         {
 
               //カメラの位置を取得
                 Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -48,10 +47,7 @@ public class Striker : MonoBehaviour
                 //力を加える
                 rigidbody.AddForce(shotForward * strikerSpeed);
                 Debug.Log(shotForward);
-                GameManager.playerTurn = true;
-                GreenGameManager.GreenplayerTurn = false;
                 Invoke("StartPosition", 3);
-
          }
       }
     } 
