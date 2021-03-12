@@ -62,6 +62,8 @@
      <Compile Include="Assets\GameManager.cs" />
      <Compile Include="Assets\GreenCoinController.cs" />
      <Compile Include="Assets\GreenGameManager.cs" />
+     <Compile Include="Assets\GameController.cs" />
+     <Compile Include="Assets\GreenGameController.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Users/nao_matsuoka/Unity/Carrom/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
