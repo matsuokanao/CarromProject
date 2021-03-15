@@ -22,13 +22,13 @@ public class GreenGameManager : MonoBehaviour
 
      if (GreenplayerTurn == false) {
          
-         Invoke("Speed", 3);
+         Invoke("Speed", 2);
  
 		}
 
         if (GreenplayerTurn == true) {
 
-            Invoke("Speed2", 3);
+            Invoke("Speed2", 2);
         }
 	}   
  }

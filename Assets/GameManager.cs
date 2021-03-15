@@ -21,13 +21,13 @@ public class GameManager : MonoBehaviour
 
      if (playerTurn == true) {
          
-         Invoke("Speed", 3);
+         Invoke("Speed", 2);
  
 		}
         
     if (playerTurn == false) {
 
-            Invoke("Speed2", 3);
+            Invoke("Speed2", 2);
         }
 	}   
  }

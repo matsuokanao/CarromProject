@@ -5,7 +5,7 @@ using UnityEngine;
 public class Striker : MonoBehaviour
 {
     Rigidbody rigidbody;
-    public int strikerSpeed = 50;
+    public int strikerSpeed = 300;
     private Vector3 startPosition;
 
     void Start () 
@@ -33,7 +33,8 @@ public class Striker : MonoBehaviour
                 //力を加える
                 rigidbody.AddForce(shotForward * strikerSpeed);
                 Debug.Log(shotForward);
-                Invoke("StartPosition", 3);
+                Invoke("StartPosition", 2);
+
          } if (GreenGameManager.GreenplayerTurn == true)
          
          {
@@ -47,10 +48,10 @@ public class Striker : MonoBehaviour
                 //力を加える
                 rigidbody.AddForce(shotForward * strikerSpeed);
                 Debug.Log(shotForward);
-                Invoke("StartPosition", 3);
-         }
+                Invoke("StartPosition", 2);
       }
-    } 
+    }
+  } 
     
     void StartPosition()
     {
