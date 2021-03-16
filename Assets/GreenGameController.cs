@@ -7,6 +7,7 @@ public class GreenGameController : MonoBehaviour
 
     public GameObject clearUi;
     GameObject[] objects;
+    GameObject[] redobjects;
 
     void Start()
     {
@@ -16,8 +17,9 @@ public class GreenGameController : MonoBehaviour
     void Update()
     {
         objects = GameObject.FindGameObjectsWithTag("brown");
+        redobjects = GameObject.FindGameObjectsWithTag("red");
 
-        if(objects.Length == 0){
+        if(objects.Length == 0 && redobjects.Length == 0){
 
            clearUi.SetActive(true);
 

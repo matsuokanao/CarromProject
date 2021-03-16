@@ -19,3 +19,5 @@ public class GreenCoinController : MonoBehaviour
     }
 }
 
+//今後の課題　コードの修正　アーキテクチャ
+

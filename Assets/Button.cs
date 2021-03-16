@@ -9,6 +9,7 @@ public class Button : MonoBehaviour
     public GameObject clearUi;
     GameObject[] objects;
     GameObject[] brownobjects;
+    GameObject[] redobjects;
 
     // Start is called before the first frame update
     void Start()
@@ -21,13 +22,16 @@ public class Button : MonoBehaviour
     {
         objects = GameObject.FindGameObjectsWithTag("white");
         brownobjects = GameObject.FindGameObjectsWithTag("brown");
+        redobjects = GameObject.FindGameObjectsWithTag("red");
 
-        if(objects.Length == 0 || brownobjects.Length == 0){
+        if(redobjects.Length == 0){
+
+        if(objects.Length == 0 || brownobjects.Length == 0 ){
 
            clearUi.SetActive(true);
-
         }
-    }
+     }
+ }
 
      public void ReloadGame() {
           // 現在のシーン名を取得してシーンを読み込む
